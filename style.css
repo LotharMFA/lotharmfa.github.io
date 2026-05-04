@@ -6,7 +6,7 @@
 }
 
 :root {
-  --bg-body: rgba(17, 17, 17, 0.98);
+  --bg-body: rgba(17, 17, 17, 0.9);
   --color-light: rgb(209, 216, 224);
   --color-dark: rgb(47, 54, 64);
   --color-primary: rgb(168, 255, 0);
