@@ -108,7 +108,7 @@ body::before {
 .profile-bio {
   font-size: 18px;
   line-height: 1.6;
-  max-width: 750px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -321,6 +321,7 @@ a {
   text-shadow: 0 0 5px var(--color-primary);
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
   .cards-wrapper {
     grid-template-columns: 1fr 1fr;
