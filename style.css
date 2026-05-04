@@ -46,6 +46,11 @@ body::before {
   z-index: -1;
 }
 
+::selection {
+  background: var(--color-primary);
+  color: var(--color-dark);
+}
+
 .wrapper {
   background-color: var(--bg-body);
   max-width: 960px;
@@ -321,7 +326,6 @@ a {
   text-shadow: 0 0 5px var(--color-primary);
 }
 
-/* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
   .cards-wrapper {
     grid-template-columns: 1fr 1fr;
