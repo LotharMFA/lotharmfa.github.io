@@ -1,0 +1,24 @@
+name: Deploy e Limpeza
+
+on:
+  push:
+    branches:
+      - main  # Executa sempre que enviar algo pra main branch
+
+permissions:
+  deployments: write
+  contents: read
+
+jobs:
+  job_de_limpeza:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Código
+        uses: actions/checkout@v
+
+      - name: Deletar Deployments Antigos
+        uses: maxgherman/delete-deployment-action@v1
+        with:
+          token: ${{ github.token }}
+          only_inactive: false    # Quando 'false', limpa tudo que exceder o limite
+          keep_latest: 3          # Quantos deploys manter de backup
